@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", "Playfair Display", Georgia, serif;
+  --font-display: "Playfair Display", "Cormorant Garamond", Georgia, serif;
+
+  /* Premium Bakery Palette */
+  /* Cream and Pastel Beige */
+  --color-cream-50: #faf8f5;
+  --color-cream-100: #f5eedf;
+  --color-cream-200: #ebdcc3;
+  --color-cream-300: #dfc5a0;
+  --color-cream-400: #cfab7a;
+  --color-cream-500: #bf9158;
+
+  /* Rich Chocolate Brown */
+  --color-choco-50: #f8f5f3;
+  --color-choco-100: #ece1da;
+  --color-choco-300: #c6a695;
+  --color-choco-600: #7c4f39;
+  --color-choco-700: #643e2c;
+  --color-choco-800: #4a2e20;
+  --color-choco-900: #2b1a12;
+
+  /* Elegant Gold Accents */
+  --color-gold-50: #fefdfa;
+  --color-gold-100: #fdf5e6;
+  --color-gold-200: #f9e3bd;
+  --color-gold-300: #f3cc8f;
+  --color-gold-400: #ebb15d;
+  --color-gold-500: #df9433;
+  --color-gold-600: #bd7323;
+  --color-gold-700: #93531b;
+  --color-gold-800: #6e3a15;
+  --color-gold-900: #4d260f;
+
+  /* Soft Pastel Pink */
+  --color-pastelp-50: #fefafb;
+  --color-pastelp-100: #fdf2f4;
+  --color-pastelp-200: #fbe0e5;
+  --color-pastelp-300: #f6bcc6;
+  --color-pastelp-400: #eb8ea0;
+  --color-pastelp-500: #dd627c;
+  --color-pastelp-600: #c1415c;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-cream-50);
+  color: var(--color-choco-900);
+}
+
+/* Glassmorphism custom classes */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.glass-panel-dark {
+  background: rgba(43, 26, 18, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-cream-100);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-choco-300);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-choco-600);
+}

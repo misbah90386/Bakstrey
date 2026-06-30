@@ -1,0 +1,6 @@
+{
+  "name": "Bakstrey",
+  "description": "A premium, elegant, and modern website for Bakstrey, a luxury cake bakery specializing in custom, birthday, wedding cakes, and exquisite freshly baked treats.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
